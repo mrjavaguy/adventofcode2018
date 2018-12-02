@@ -48,7 +48,7 @@ func day01Part2(input []int) int {
 }
 
 func main() {
-	lines, _ := input.FileToLines("input01.txt")
+	lines, _ := input.FileToLines("day01/input01.txt")
 	day01input := convertStringArrayToIntArray(lines)
 	part1 := day01Part1(day01input)
 	part2 := day01Part2(day01input)
