@@ -3,6 +3,7 @@ package input
 import (
 	"bufio"
 	"io"
+	"io/ioutil"
 	"os"
 )
 
@@ -26,4 +27,14 @@ func FileToLines(filePath string) ([]string, error) {
 	}
 	defer f.Close()
 	return linesFromReader(f)
+}
+
+func FileToLine(filePath string) (string, error) {
+	f, err := ioutil.ReadFile(filePath)
+	if err != nil {
+		return "", err
+	}
+
+	str := string(f)
+	return str, nil
 }
