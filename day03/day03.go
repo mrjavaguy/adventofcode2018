@@ -13,7 +13,7 @@ func main() {
 	board := createFabricBoard(rects)
 	part1 := day03Part1(board)
 	part2 := day03Part2(rects, board)
-	fmt.Printf("Day 1 Part 1 %v, Part 2 %v", part1, part2)
+	fmt.Printf("Day 3 Part 1 %v, Part 2 %v", part1, part2)
 }
 
 func day03Part1(board map[Vertex][]string) int {
