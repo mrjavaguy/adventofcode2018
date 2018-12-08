@@ -29,7 +29,7 @@ func main() {
 
 	part1 := day04Part1(guards)
 	part2 := day04Part2(guards)
-	fmt.Printf("Day 1 Part 1 %v, Part 2 %v", part1, part2)
+	fmt.Printf("Day 4 Part 1 %v, Part 2 %v", part1, part2)
 }
 
 func day04Part1(guards map[int]guard) int {

@@ -13,7 +13,7 @@ func main() {
 	lines, _ := input.FileToLines("day06/input06.txt")
 	part1 := Day06Part1(lines)
 	part2 := Day06Part2(lines)
-	fmt.Printf("Day 1 Part 1 %v, Part 2 %v", part1, part2)
+	fmt.Printf("Day 6 Part 1 %v, Part 2 %v", part1, part2)
 }
 
 func Day06Part1(lines []string) int {

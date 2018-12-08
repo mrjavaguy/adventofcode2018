@@ -5,7 +5,22 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"strconv"
 )
+
+func readInts(r io.Reader) ([]int, error) {
+	scanner := bufio.NewScanner(r)
+	scanner.Split(bufio.ScanWords)
+	var result []int
+	for scanner.Scan() {
+		x, err := strconv.Atoi(scanner.Text())
+		if err != nil {
+			return result, err
+		}
+		result = append(result, x)
+	}
+	return result, scanner.Err()
+}
 
 func linesFromReader(r io.Reader) ([]string, error) {
 	var lines []string
@@ -37,4 +52,13 @@ func FileToLine(filePath string) (string, error) {
 
 	str := string(f)
 	return str, nil
+}
+
+func FileToInts(filePath string) ([]int, error) {
+	f, err := os.Open(filePath)
+	if err != nil {
+		return nil, err
+	}
+	defer f.Close()
+	return readInts(f)
 }
