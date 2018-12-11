@@ -8,10 +8,10 @@ import (
 )
 
 func main() {
-
+	lin
 	part1 := Day09Part1("411 players; last marble is worth 72059 points")
 	part2 := Day09Part2("411 players; last marble is worth 72059 points")
-	fmt.Printf("Day 8 Part 1 %v, Part 2 %v", part1, part2)
+	fmt.Printf("Day 9 Part 1 %v, Part 2 %v", part1, part2)
 }
 
 func Day09Part1(game string) int {
