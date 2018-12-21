@@ -15,7 +15,7 @@ var lines = []string{
 	"...#.|..|.",
 }
 
-func TestDay19Part1(t *testing.T) {
+func TestDay18Part1(t *testing.T) {
 	area := ParseInput(lines)
 	part1 := Day18Part1(area)
 	expected := 1147
