@@ -20,7 +20,7 @@ func main() {
 
 	part1 := Day15Part1(lines)
 	part2 := Day15Part2(lines)
-	fmt.Printf("Day 1 Part 1 %v, Part 2 %v", part1, part2)
+	fmt.Printf("Day 15 Part 1 %v, Part 2 %v", part1, part2)
 }
 
 func Day15Part1(input []string) int {
