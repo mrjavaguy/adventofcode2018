@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestDay19Part1(t *testing.T) {
+func TestDay22Part1(t *testing.T) {
 	part1 := Day22Part1(510, complex(10, 10))
 	expected := 114
 	if part1 != expected {
@@ -10,7 +10,7 @@ func TestDay19Part1(t *testing.T) {
 	}
 }
 
-func TestDay19Part2(t *testing.T) {
+func TestDay22Part2(t *testing.T) {
 	part1 := Day22Part2(510, complex(10, 10))
 	expected := 45
 	if part1 != expected {
